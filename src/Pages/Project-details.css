@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.project-details{
+      text-align: center;
+}
+.project-name{
+    padding: 1.8rem;
+    padding-top: 0;
+   
+}
+.project-name >h1{
+     font-weight: lighter;
+
+}
+.technologies-used{
+    padding: 0 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.technology-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.technology-list-item{
+    padding: .5rem;
+    
+    background-color: gray;
+    border-radius: 10px;
+}
+.project_image >img{
+    width: 100%;
+    height: max-content;
+    object-fit: fill;
+
+}
+
+.overview{
+    text-align: left;
+}
+
+.overview >h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+
+}
+.overview >h2::after{
+     content: "";
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #22c55e);
+
+    border-radius: 50px;
+
+
+}
+.overview >p{
+    margin:  1.5rem 0;
+    font-size: large;
+}
+
+.technologies{
+    text-align: left;
+}
+.technologies >h2{
+      position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+
+}
+.technologies >h2::after{
+     content: " ";
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #22c55e);
+
+    border-radius: 50px;
+
+}
+
+.technologies > ul{
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    gap: 1.5rem;
+}
+.technologies > ul >li{
+    padding: .5rem;
+    
+    background-color: gray;
+    border-radius: 10px;
+
+}

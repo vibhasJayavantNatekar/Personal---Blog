@@ -5,6 +5,8 @@ import { DiGithubAlt } from 'react-icons/di'
 import { FaGithub } from 'react-icons/fa'
 import Inventory  from '../assets/inventory.png'
 import './Project.css'
+import ProjectDetails from './ProjectDetails'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
@@ -24,7 +26,7 @@ const Projects = () => {
                 <div className="project-btn-container">
                   {/* <a href="#" className="btn-github"><FaGithub /> Github </a>
                   <a href="#" className="btn-live"> <BsArrowDownUp /> Live Demo </a> */}
-                  <a href="#" class="btn-details">View Details</a>
+                 <Link to={'/pro-details'} > <a class="btn-details">View Details</a></Link>
 
                 </div>
               </div>

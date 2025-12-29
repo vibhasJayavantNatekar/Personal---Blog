@@ -5,6 +5,7 @@ import Project from './Pages/Projects'
 import About from './Pages/About'
 import Home from './Pages/Home'
 import Footer from './Components/Footer'
+import ProjectDetails from './Pages/ProjectDetails'
 
 function App() {
 
@@ -14,13 +15,17 @@ function App() {
       <BrowserRouter>
         <Navbar />
 
+   
+
         <Routes>
+          <Route path='/pro-details' element={<ProjectDetails/>} />
           <Route path='/' element={<Home/>}  />
           <Route path='/projects' element={<Project />} />
           <Route path='about' element={<About />} />
 
 
         </Routes>
+
 
            <Footer/>
 
