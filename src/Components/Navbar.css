@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-wrapper {
+    background-color: #ecf0f3;
+
+}
+
+.name-logo {}
+
+.nav-container {
+
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    margin: 0 2rem;
+
+}
+
+.nav-items {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+
+}
+
+.item {
+    font-size: 1.2rem;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu-nav-items{
+    
+    width: 100%;
+    background-color: #ecf0f3;
+     list-style: none;
+}
+
+@media (max-width: 450px) {
+    .nav-container {
+        padding: 1.8rem 0;
+    }
+
+    .nav-items {
+         display: none; 
+       
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+
+}

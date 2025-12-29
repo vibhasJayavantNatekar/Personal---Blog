@@ -1,0 +1,24 @@
+
+
+.footer-wrapper{
+    background-color: #edf1f3;
+    height: 20vh;
+
+}
+
+.footer-container{
+    display: flex;
+    
+    justify-content: center;
+ 
+
+
+
+}
+
+.footer-content >h4 {
+    font-size: medium;
+      font-weight: lighter;
+         margin-top: 2rem;
+
+}

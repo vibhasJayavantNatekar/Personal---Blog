@@ -1,0 +1,113 @@
+.project-container {
+    text-align: center;
+    margin: 0 1rem;
+}
+.project-container > h1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.project-container > h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #22c55e);
+
+    border-radius: 50px;
+}
+
+
+
+.project-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.project-card {
+    width: 30%;
+    margin: 1.5rem 1rem;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.06),
+        0 2px 6px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 16px 35px rgba(0, 0, 0, 0.12),
+        0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.project-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+
+
+.project-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 1.2rem 1.5rem 0.4rem;
+    color: #0f172a;
+}
+
+
+
+.project-des {
+    padding: 0 1.5rem 1.4rem;
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+
+.project-btn-container {
+    padding: 1rem 1.5rem 1.6rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.btn-details {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    text-decoration: none;
+    border: 1px solid #e2e8f0;
+    transition: all 0.25s ease;
+}
+
+.btn-details:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.3);
+}
+@media (max-width: 450px){
+
+    .project-card{
+        width: fit-content;
+    }
+
+}
